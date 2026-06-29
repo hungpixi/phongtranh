@@ -71,7 +71,7 @@ Ngay khi khách đặt vé thành công trên các nền tảng, hệ thống ho
 ## 5. Tổng Kết Dự Án & Định Hướng Vận Hành Cho Chị Thi
 
 ### 5.1 Quy Mô Kênh Tiếp Cận
-- **Tổng số kênh Online (OTA & Local SEO): 5 kênh** (Klook, TripAdvisor/Viator, Airbnb Experiences, Trip.com/Ctrip, Google Local SEO).
+- **Tổng số kênh Online (OTA & Local SEO): 10 kênh** (Klook, KKday, TripAdvisor, Viator, Airbnb, Trip.com, Ctrip, Agoda, Booking, Google Maps).
 - **Tổng số kênh Offline: 2 kênh chính** (Mạng lưới xe điện Buggy địa phương, Liên kết Khách sạn/Homestay lân cận trong bán kính 1km).
 
 ### 5.2 Cơ Cấu Chi Phí Vận Hành & Lợi Nhuận
