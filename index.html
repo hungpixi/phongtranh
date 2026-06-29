@@ -669,6 +669,50 @@
         </div>
     </section>
 
+    <!-- Detailed Documentation Section -->
+    <section id="documentation" class="section documentation-section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>9. Hệ Thống Tài Liệu & Cẩm Nang Chi Tiết</h2>
+                <p class="section-subtitle">Xem toàn bộ báo cáo chi tiết, cẩm nang vận hành và hướng dẫn từng bước thiết lập các kênh OTA</p>
+                <div class="divider"></div>
+            </div>
+
+            <div class="docs-container">
+                <!-- Sidebar Menu -->
+                <div class="docs-sidebar">
+                    <div class="docs-group">
+                        <div class="docs-group-title">I. Báo Cáo Chiến Lược</div>
+                        <ul class="docs-list">
+                            <li><button class="docs-item active" onclick="loadDoc(event, 'business_info')">1. Tổng Quan & Vị Trí</button></li>
+                            <li><button class="docs-item" onclick="loadDoc(event, 'products_and_pricing')">2. Danh Mục Sản Phẩm</button></li>
+                            <li><button class="docs-item" onclick="loadDoc(event, 'offline_marketing')">3. Tiếp Thị Ngoại Tuyến</button></li>
+                            <li><button class="docs-item" onclick="loadDoc(event, 'growth_and_operations')">4. Vận Hành & Tăng Trưởng</button></li>
+                        </ul>
+                    </div>
+                    <div class="docs-group">
+                        <div class="docs-group-title">II. Cẩm Nang Đăng Ký OTA</div>
+                        <ul class="docs-list">
+                            <li><button class="docs-item" onclick="loadDoc(event, 'klook')">5. Hướng Dẫn Klook & KKday</button></li>
+                            <li><button class="docs-item" onclick="loadDoc(event, 'tripadvisor')">6. Hướng Dẫn TripAdvisor & Viator</button></li>
+                            <li><button class="docs-item" onclick="loadDoc(event, 'airbnb')">7. Hướng Dẫn Airbnb Experiences</button></li>
+                            <li><button class="docs-item" onclick="loadDoc(event, 'tripcom')">8. Hướng Dẫn Trip.com & Ctrip</button></li>
+                            <li><button class="docs-item" onclick="loadDoc(event, 'agoda')">9. Hướng Dẫn Agoda & Booking</button></li>
+                            <li><button class="docs-item" onclick="loadDoc(event, 'google_seo')">10. Hướng Dẫn Google Local SEO</button></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Content Viewer -->
+                <div class="docs-viewer">
+                    <div id="docs-content" class="docs-paper">
+                        <!-- Content injected by JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container text-center">
