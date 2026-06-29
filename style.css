@@ -983,6 +983,11 @@ hr {
     margin-top: 15px;
 }
 
+.crm-inputs-grid .table-input {
+    width: 100%;
+    text-align: left;
+}
+
 .crm-input-group {
     display: flex;
     flex-direction: column;
