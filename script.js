@@ -244,6 +244,76 @@ function openTab(evt, tabName) {
 // Global CRM States & Functions
 let currentCRMLang = 'vi';
 
+function translateTimeInput(timeStr, targetLang) {
+    if (targetLang === 'vi') return timeStr;
+    
+    let result = timeStr;
+    
+    const dict = {
+        en: {
+            'ngày mai': 'tomorrow',
+            'hôm nay': 'today',
+            'ngày mốt': 'the day after tomorrow',
+            'ngày kia': 'the day after tomorrow',
+            'chiều nay': 'this afternoon',
+            'sáng mai': 'tomorrow morning',
+            'chiều mai': 'tomorrow afternoon',
+            'tối mai': 'tomorrow evening',
+            'chủ nhật': 'Sunday',
+            'thứ hai': 'Monday',
+            'thứ ba': 'Tuesday',
+            'thứ tư': 'Wednesday',
+            'thứ năm': 'Thursday',
+            'thứ sáu': 'Friday',
+            'thứ bảy': 'Saturday'
+        },
+        zh: {
+            'ngày mai': '明天',
+            'hôm nay': '今天',
+            'ngày mốt': '后天',
+            'ngày kia': '后天',
+            'chiều nay': '今天下午',
+            'sáng mai': '明天上午',
+            'chiều mai': '明天下午',
+            'tối mai': '明天晚上',
+            'chủ nhật': '周日',
+            'thứ hai': '周一',
+            'thứ ba': '周二',
+            'thứ tư': '周三',
+            'thứ năm': '周四',
+            'thứ sáu': '周五',
+            'thứ bảy': '周六'
+        },
+        ko: {
+            'ngày mai': '내일',
+            'hôm nay': '오늘',
+            'ngày mốt': '모레',
+            'ngày kia': '모레',
+            'chiều nay': '오늘 오후',
+            'sáng mai': '내일 오전',
+            'chiều mai': '내일 오후',
+            'tối mai': '내일 저녁',
+            'chủ nhật': '일요일',
+            'thứ hai': '월요일',
+            'thứ ba': '화요일',
+            'thứ tư': '수요일',
+            'thứ năm': '목요일',
+            'thứ sáu': '금요일',
+            'thứ bảy': '토요일'
+        }
+    };
+    
+    const translations = dict[targetLang];
+    if (!translations) return timeStr;
+    
+    for (const [vietnamese, translated] of Object.entries(translations)) {
+        const regex = new RegExp(vietnamese, 'gi');
+        result = result.replace(regex, translated);
+    }
+    
+    return result;
+}
+
 function changeCRMLang(lang) {
     currentCRMLang = lang;
     
@@ -268,7 +338,8 @@ function updateCRMMessage() {
     if (!nameInput || !timeInput || !qtyInput || !activityInput) return;
 
     const name = nameInput.value || 'Guest';
-    const time = timeInput.value || '15:00';
+    const rawTime = timeInput.value || '15:00';
+    const time = translateTimeInput(rawTime, currentCRMLang);
     const qty = qtyInput.value || '1';
     const activityKey = activityInput.value;
 
