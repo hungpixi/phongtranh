@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="doc_title">Maison TiA - Không Gian Trưng Bày Nghệ Thuật & Workshop Hội An</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="gallery.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpg" href="assets/storefront/storefront_night_close.jpg">
+</head>
+<body>
+
+    <!-- Header & Navigation Bar -->
+    <nav class="navbar">
+        <!-- Scroll Progress Indicator Strip -->
+        <div class="scroll-progress" id="scroll-progress-bar"></div>
+        
+        <div class="nav-container">
+            <a href="#" class="logo">
+                Maison TiA
+                <span data-i18n="logo_sub">Art & Objects</span>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#space" data-i18n="nav_space">Không Gian</a></li>
+                <li><a href="#collections" data-i18n="nav_collection">Bộ Sưu Tập</a></li>
+                <li><a href="#workshop" data-i18n="nav_workshop">Workshop</a></li>
+                <li><a href="#photo-spot" data-i18n="nav_photospot">Góc Check-in</a></li>
+                <li><a href="#visit" data-i18n="nav_visit">Ghé Thăm</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <!-- Language Switcher -->
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="vi">VI</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="zh">ZH</button>
+                    <button class="lang-btn" data-lang="ko">KO</button>
+                </div>
+                
+                <a href="#booking-section" class="btn-nav-cta" data-i18n="btn_book_now">Đặt Lịch Ngay</a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Immersive Cinematic Hero Section (2026 Trend - No Glassmorphism) -->
+    <header class="hero-immersive">
+        <!-- Cinematic Background Slideshow (100% Sharp - No Zoom) -->
+        <div class="hero-bg-slideshow">
+            <div class="slide" style="background-image: url('assets/storefront/storefront_night_full.jpg');"></div>
+            <div class="slide" style="background-image: url('assets/storefront/balcony_terrace_day.jpg');"></div>
+            <div class="slide" style="background-image: url('assets/storefront/gallery_interior_paintings.jpg');"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        
+        <div class="container hero-container-immersive">
+            <!-- Cinematic Typography (Floating Directly on Vignette, No Glass Box) -->
+            <div class="hero-text-immersive">
+                <span class="hero-badge" data-i18n="hero_badge">Hội An Boutique Gallery</span>
+                <h1 class="hero-title-gradient">Maison TiA<br><span class="italic-serif" data-i18n="logo_sub">Art & Objects</span></h1>
+                <p class="hero-desc" data-i18n="hero_desc">Nơi giao thoa giữa hội họa độc bản, thời trang lụa tơ tằm vẽ tay cao cấp và những trải nghiệm gốm nghệ thuật mộc mạc bên dòng sông Hoài thơ mộng.</p>
+                
+                <!-- Quick Info Meta List (Minimalist & Artistic) -->
+                <div class="hero-meta-list">
+                    <span>122 Nguyễn Phúc Tần, Hội An</span>
+                    <span data-i18n="hero_quick_walk">Cách Phố Cổ 5 phút đi bộ</span>
+                    <span data-i18n="hero_quick_hotel">Ngay cạnh Bel Marina Resort</span>
+                </div>
+
+                <div class="hero-actions">
+                    <a href="#booking-section" class="btn btn-primary" data-i18n="hero_btn_workshop">Đăng Ký Workshop</a>
+                    <a href="#space" class="btn btn-secondary" data-i18n="hero_btn_space">Khám Phá Không Gian</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Animated Scroll Line Indicator (Luxury Design) -->
+        <div class="scroll-line-indicator">
+            <span class="scroll-text">Scroll to explore</span>
+            <div class="line"></div>
+        </div>
+    </header>
+
+    <!-- Partner Discount Banner Strip -->
+    <div class="partner-discount-strip">
+        <div class="container">
+            <div class="discount-content">
+                <p>
+                    <strong data-i18n="partner_strip_title">Ưu đãi kết nối đối tác:</strong> 
+                    <span data-i18n="partner_strip_desc">Nếu bạn đang ở các Khách sạn/Homestay lân cận hoặc đi xe điện Buggy, hãy hỏi lễ tân hoặc tài xế để nhận thẻ ưu đãi giảm giá 10% tại Maison TiA!</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Space Overview Section -->
+    <section id="space" class="section space-section">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="subheading" data-i18n="space_sub">ĐỊA ĐIỂM CỦA NGHỆ THUẬT</span>
+                <h2 data-i18n="space_title">Không Gian Maison TiA</h2>
+                <div class="divider mx-auto"></div>
+                <p class="section-intro" data-i18n="space_intro">Tọa lạc tại số 122 Nguyễn Phúc Tần, An Hội – chỉ cách khu phố cổ vài bước chân và ngay cạnh Bel Marina Resort. Maison TiA mang đến không gian tĩnh lặng, đầy chất thơ tách biệt khỏi ồn ào đô thị.</p>
+            </div>
+
+            <!-- Asymmetrical Split Panel layout for editorial look -->
+            <div class="space-split-layout">
+                <!-- Left panel: Sticky details (editorial coordinate info and philosophy) -->
+                <div class="space-left-panel reveal reveal-slide-left">
+                    <div class="space-sticky-info">
+                        <div class="space-meta-item">
+                            <span class="meta-label" data-i18n="space_coord_title">Toạ độ Địa Lý</span>
+                            <span class="meta-value" data-i18n="space_coord_val">15.877° N, 108.324° E - Đảo An Hội, Hội An</span>
+                        </div>
+                        <div class="space-philosophy">
+                            <h4 data-i18n="space_philosoph_title">Triết Lý Không Gian</h4>
+                            <p data-i18n="space_philosoph_desc">Maison TiA được xây dựng trên sự tôn trọng vẻ đẹp bản địa mộc mạc. Sự chuyển tiếp từ cầu An Hội ồn ào qua đảo An Hội yên bình là lúc tâm hồn bạn tĩnh lặng để thưởng thức nghệ thuật thuần khiết nhất.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right panel: Floor cards (Tầng 1 and Tầng 2) -->
+                <div class="space-right-panel space-grid">
+                    <!-- Tầng 1 -->
+                    <div class="space-card tilt-card reveal reveal-slide-right">
+                        <div class="space-img-wrapper">
+                            <img src="assets/storefront/gallery_interior_paintings.jpg" alt="Tầng 1 - Trưng bày tranh và khăn lụa">
+                            <div class="space-badge">Tầng 1</div>
+                        </div>
+                        <div class="space-info">
+                            <h3 data-i18n="space_t1_title">Trưng Bày Tranh & Khăn Lụa Tơ Tằm</h3>
+                            <p data-i18n="space_t1_desc">Tầng trệt được chiếu rọi bằng hệ thống đèn tiêu chuẩn gallery có chỉ số hoàn màu CRI >90 giúp hiển thị chân thực từng thớ lụa và độ sâu sơn mài. Tại đây cũng thiết kế góc gương lớn viền gỗ mộc để quý khách tự do ướm thử và lưu lại những bức ảnh kỷ niệm.</p>
+                            <div class="space-technical-specs">
+                                <span class="spec-tag">CRI >90 Lighting</span>
+                                <span class="spec-tag">Boutique Showroom</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tầng 2 -->
+                    <div class="space-card tilt-card reveal reveal-slide-right">
+                        <div class="space-img-wrapper">
+                            <img src="assets/storefront/balcony_terrace_day.jpg" alt="Tầng 2 - Ban công workshop">
+                            <div class="space-badge">Tầng 2</div>
+                        </div>
+                        <div class="space-info">
+                            <h3 data-i18n="space_t2_title">Ban Công Trải Nghiệm Lộng Gió</h3>
+                            <p data-i18n="space_t2_desc">Tầng hai sở hữu không gian mở ban công mát mẻ hướng sông Hoài, lợp mái ngói âm dương truyền thống. Nơi giàn hoa giấy hồng rực rỡ đan xen cùng đèn tre tre mây ấm cúng, mang đến cảm hứng sáng tạo tuyệt vời nhất.</p>
+                            <div class="space-technical-specs">
+                                <span class="spec-tag">Yin-Yang Roof</span>
+                                <span class="spec-tag">River Breeze</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signature Collections Section -->
+    <section id="collections" class="section collections-section bg-light">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="subheading" data-i18n="coll_sub">SẢN PHẨM NỔI BẬT</span>
+                <h2 data-i18n="coll_title">Bộ Sưu Tập Nghệ Thuật</h2>
+                <div class="divider mx-auto"></div>
+                <p class="section-intro" data-i18n="coll_intro">Mỗi tác phẩm nghệ thuật, khăn lụa hay đồ quà tặng lưu niệm tại Maison TiA đều mang một câu chuyện sáng tạo độc đáo đi kèm thẻ câu chuyện thương hiệu (Story tags) song ngữ.</p>
+            </div>
+
+            <!-- Portfolio Category Filter Bar -->
+            <div class="portfolio-filter-bar reveal">
+                <button class="filter-btn active" data-filter="all" data-i18n="filter_all">Tất cả</button>
+                <button class="filter-btn" data-filter="paintings" data-i18n="filter_paintings">Hội họa độc bản</button>
+                <button class="filter-btn" data-filter="silk" data-i18n="filter_silk">Lụa vẽ tay</button>
+                <button class="filter-btn" data-filter="ceramics" data-i18n="filter_ceramics">Gốm Thanh Hà</button>
+                <button class="filter-btn" data-filter="souvenirs" data-i18n="filter_souvenirs">Quà lưu niệm</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Item 1: Tranh nghệ thuật -->
+                <div class="portfolio-card tilt-card reveal" data-category="paintings" onclick="openLightbox(0)">
+                    <div class="portfolio-frame-wrapper">
+                        <div class="portfolio-img-wrapper">
+                            <img src="assets/storefront/gallery_interior_paintings.jpg" alt="Original Paintings">
+                            <div class="portfolio-hover">
+                                <span class="zoom-icon">+</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-desc">
+                        <div class="portfolio-meta">
+                            <span class="category" data-i18n="coll_cat_paintings">Hội Họa</span>
+                            <span class="story-tag-indicator" data-i18n="story_tag_btn">Đọc câu chuyện tác phẩm</span>
+                        </div>
+                        <h3 data-i18n="coll_item1_title">Tranh Nghệ Thuật Độc Bản</h3>
+                    </div>
+                </div>
+
+                <!-- Item 2: Khăn lụa -->
+                <div class="portfolio-card tilt-card reveal" data-category="silk" onclick="openLightbox(1)">
+                    <div class="portfolio-frame-wrapper">
+                        <div class="portfolio-img-wrapper">
+                            <img src="assets/storefront/gallery_interior_crafts.jpg" alt="Hand-painted Silk Scarves">
+                            <div class="portfolio-hover">
+                                <span class="zoom-icon">+</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-desc">
+                        <div class="portfolio-meta">
+                            <span class="category" data-i18n="coll_cat_silk">Thời Trang Cao Cấp</span>
+                            <span class="story-tag-indicator" data-i18n="story_tag_btn">Đọc câu chuyện tác phẩm</span>
+                        </div>
+                        <h3 data-i18n="coll_item2_title">Khăn Lụa Tơ Tằm Vẽ Tay</h3>
+                    </div>
+                </div>
+
+                <!-- Item 3: Gốm Thanh Hà -->
+                <div class="portfolio-card tilt-card reveal" data-category="ceramics" onclick="openLightbox(2)">
+                    <div class="portfolio-frame-wrapper">
+                        <div class="portfolio-img-wrapper">
+                            <img src="assets/storefront/balcony_terrace_day.jpg" alt="Handcrafted Ceramics">
+                            <div class="portfolio-hover">
+                                <span class="zoom-icon">+</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-desc">
+                        <div class="portfolio-meta">
+                            <span class="category" data-i18n="coll_cat_ceramics">Thủ Công Mỹ Nghệ</span>
+                            <span class="story-tag-indicator" data-i18n="story_tag_btn">Đọc câu chuyện tác phẩm</span>
+                        </div>
+                        <h3 data-i18n="coll_item3_title">Gốm Mộc Làng Cổ Thanh Hà</h3>
+                    </div>
+                </div>
+
+                <!-- Item 4: Thiệp vẽ tay -->
+                <div class="portfolio-card tilt-card reveal" data-category="souvenirs" onclick="openLightbox(3)">
+                    <div class="portfolio-frame-wrapper">
+                        <div class="portfolio-img-wrapper">
+                            <img src="assets/storefront/storefront_night_close.jpg" alt="Handmade Cards">
+                            <div class="portfolio-hover">
+                                <span class="zoom-icon">+</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-desc">
+                        <div class="portfolio-meta">
+                            <span class="category" data-i18n="coll_cat_souvenirs">Quà Lưu Niệm</span>
+                            <span class="story-tag-indicator" data-i18n="story_tag_btn">Đọc câu chuyện tác phẩm</span>
+                        </div>
+                        <h3 data-i18n="coll_item4_title">Thiệp Vẽ Tay & Bưu Thiếp Nghệ Thuật</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workshop Section with Clickable Golden Hour Time Slots -->
+    <section id="workshop" class="section workshop-section">
+        <div class="container">
+            <div class="workshop-layout">
+                <div class="workshop-content reveal reveal-slide-left">
+                    <span class="subheading" data-i18n="ws_sub">TRẢI NGHIỆM ĐỘC ĐÁO</span>
+                    <h2 data-i18n="ws_title">Workshop Sáng Tạo Nghệ Thuật</h2>
+                    <div class="divider"></div>
+                    <p class="ws-desc-p" data-i18n="ws_desc">Dành cho bản thân một buổi sáng hoặc buổi chiều thư thái, ngồi bên ban công lộng gió của Maison TiA, tự tay vẽ nên một tác phẩm mang đậm bản sắc cá nhân dưới sự hướng dẫn nhiệt tình của chúng tôi.</p>
+                    
+                    <!-- Golden Time Slots with Sun Icons -->
+                    <div class="golden-slots-container">
+                        <h4 data-i18n="ws_slots_title">Bấm Chọn Khung Giờ Trải Nghiệm (Khuyên Dùng):</h4>
+                        <div class="slots-grid">
+                            <div class="slot-card" data-slot="09:00">
+                                <div class="slot-icon">🌅</div>
+                                <div class="slot-time">09:00 - 11:00</div>
+                                <div class="slot-name" data-i18n="slot1_name">Khung Sáng Mát Lành</div>
+                                <div class="slot-benefit" data-i18n="slot1_benefit">Gió mát sông Hoài, ánh sáng tự nhiên lý tưởng để phối màu vẽ gốm.</div>
+                            </div>
+                            <div class="slot-card active" data-slot="14:00">
+                                <div class="slot-icon">☀️</div>
+                                <div class="slot-time">14:00 - 16:00</div>
+                                <div class="slot-name" data-i18n="slot2_name">Tránh Nắng Trưa Hè</div>
+                                <div class="slot-benefit" data-i18n="slot2_benefit">Hoạt động trong nhà mát mẻ, không gian tĩnh lặng, thư thái.</div>
+                            </div>
+                            <div class="slot-card" data-slot="16:30">
+                                <div class="slot-icon">🌇</div>
+                                <div class="slot-time">16:30 - 18:30</div>
+                                <div class="slot-name" data-i18n="slot3_name">Hoàng Hôn Phố Cổ</div>
+                                <div class="slot-benefit" data-i18n="slot3_benefit">Khung giờ vàng hoàng hôn tuyệt đẹp buông xuống sông Hoài và phố cổ.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Workshop descriptions / options -->
+                    <div class="ws-options">
+                        <!-- Option 1: Pottery Painting -->
+                        <div class="ws-option-card">
+                            <div class="ws-option-header">
+                                <h3 data-i18n="ws_opt1_title">1. Vẽ Màu Trên Gốm Thanh Hà</h3>
+                                <span class="ws-price">250.000đ</span>
+                            </div>
+                            <p data-i18n="ws_opt1_desc">Sử dụng phôi gốm nung mộc mạc chính gốc từ làng gốm Thanh Hà cổ kính (500 năm tuổi), kết hợp màu acrylic bền đẹp để sáng tạo ly, đĩa hoặc tượng nhỏ của riêng bạn.</p>
+                        </div>
+
+                        <!-- Option 2: Silk Painting -->
+                        <div class="ws-option-card">
+                            <div class="ws-option-header">
+                                <h3 data-i18n="ws_opt2_title">2. Vẽ Thiệp Nghệ Thuật & Tranh Lụa Nhỏ</h3>
+                                <span class="ws-price">200.000đ</span>
+                            </div>
+                            <p data-i18n="ws_opt2_desc">Làm quen với chất liệu lụa tơ tằm Hội An truyền thống, học cách đi cọ, pha màu để tạo nên bưu thiếp nghệ thuật hoặc một bức tranh lụa để bàn xinh xắn.</p>
+                        </div>
+                    </div>
+
+                    <!-- Visual Inclusions grid -->
+                    <div class="ws-benefits">
+                        <h4 data-i18n="ws_benefit_title">Workshop đã bao gồm:</h4>
+                        <div class="ws-inclusions-grid">
+                            <div class="ws-inclusion-card">
+                                <div class="ws-inclusion-icon">🏺</div>
+                                <div class="ws-inclusion-text">
+                                    <p data-i18n="ws_benefit1">Phôi gốm thô hoặc lụa tùy chọn chất lượng tốt</p>
+                                </div>
+                            </div>
+                            <div class="ws-inclusion-card">
+                                <div class="ws-inclusion-icon">🎨</div>
+                                <div class="ws-inclusion-text">
+                                    <p data-i18n="ws_benefit2">Toàn bộ dụng cụ vẽ chuyên nghiệp (màu acrylic, cọ vẽ, bảng pha màu)</p>
+                                </div>
+                            </div>
+                            <div class="ws-inclusion-card">
+                                <div class="ws-inclusion-icon">🍵</div>
+                                <div class="ws-inclusion-text">
+                                    <p data-i18n="ws_benefit3">Một ly trà thảo mộc Hội An thơm mát miễn phí</p>
+                                </div>
+                            </div>
+                            <div class="ws-inclusion-card">
+                                <div class="ws-inclusion-icon">🎁</div>
+                                <div class="ws-inclusion-text">
+                                    <p data-i18n="ws_benefit4">Thành phẩm nghệ thuật được đóng gói xinh xắn mang về làm quà kỷ niệm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Booking Wizard Form Column -->
+                <div id="booking-section" class="booking-wrapper reveal reveal-slide-right">
+                    <div class="booking-card tilt-card">
+                        <h3 data-i18n="book_form_title">Đặt Lịch Workshop</h3>
+                        
+                        <!-- Step Progress Dots -->
+                        <div class="booking-progress-dots">
+                            <div class="progress-dot active" data-step="1">
+                                <span class="dot-num">1</span>
+                                <span class="dot-text" data-i18n="book_step_1">Trải nghiệm</span>
+                            </div>
+                            <div class="progress-line"></div>
+                            <div class="progress-dot" data-step="2">
+                                <span class="dot-num">2</span>
+                                <span class="dot-text" data-i18n="book_step_2">Thời gian</span>
+                            </div>
+                            <div class="progress-line"></div>
+                            <div class="progress-dot" data-step="3">
+                                <span class="dot-num">3</span>
+                                <span class="dot-text" data-i18n="book_step_3">Liên hệ</span>
+                            </div>
+                        </div>
+                        
+                        <form id="workshop-booking-form" onsubmit="handleBookingSubmit(event)">
+                            <!-- Step 1: Select Experience -->
+                            <div class="form-step active" data-step="1">
+                                <div class="form-group">
+                                    <label for="booking-type" data-i18n="form_label_type">Loại Workshop</label>
+                                    <select id="booking-type" required onchange="updateEstimatedPrice()">
+                                        <option value="pottery" data-i18n="form_opt_pottery">Vẽ Gốm Thanh Hà (250.000đ/người)</option>
+                                        <option value="silk" data-i18n="form_opt_silk">Vẽ Thiệp Lụa (200.000đ/người)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="booking-guests" data-i18n="form_label_guests">Số Lượng Khách</label>
+                                    <input type="number" id="booking-guests" min="1" max="15" value="1" required onchange="updateEstimatedPrice()" oninput="updateEstimatedPrice()">
+                                </div>
+                                <div class="step-actions">
+                                    <button type="button" class="btn btn-primary btn-next btn-block" data-i18n="btn_next">Tiếp theo</button>
+                                </div>
+                            </div>
+
+                            <!-- Step 2: Select Date & Time -->
+                            <div class="form-step" data-step="2">
+                                <div class="form-group">
+                                    <label for="booking-date" data-i18n="form_label_date">Ngày Tham Gia</label>
+                                    <input type="date" id="booking-date" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="booking-time" data-i18n="form_label_time">Khung Giờ</label>
+                                    <select id="booking-time" required>
+                                        <option value="09:00">09:00 - 11:00</option>
+                                        <option value="14:00" selected>14:00 - 16:00</option>
+                                        <option value="16:30">16:30 - 18:30</option>
+                                    </select>
+                                </div>
+                                <div class="step-actions">
+                                    <button type="button" class="btn btn-prev" data-i18n="btn_prev">Quay lại</button>
+                                    <button type="button" class="btn btn-primary btn-next" data-i18n="btn_next">Tiếp theo</button>
+                                </div>
+                            </div>
+
+                            <!-- Step 3: Contact Info -->
+                            <div class="form-step" data-step="3">
+                                <div class="form-group">
+                                    <label for="booking-name" data-i18n="form_label_name">Họ và Tên</label>
+                                    <input type="text" id="booking-name" required placeholder="Nguyễn Văn A">
+                                </div>
+                                <div class="form-group">
+                                    <label for="booking-contact" data-i18n="form_label_contact">Email hoặc Số Điện Thoại (Zalo/WhatsApp)</label>
+                                    <input type="text" id="booking-contact" required placeholder="+84 905 123 456">
+                                </div>
+                                <div class="step-actions">
+                                    <button type="button" class="btn btn-prev" data-i18n="btn_prev">Quay lại</button>
+                                    <button type="submit" class="btn btn-primary" data-i18n="form_btn_submit">Gửi Yêu Cầu Đăng Ký</button>
+                                </div>
+                            </div>
+
+                            <!-- Live Price Summary -->
+                            <div class="price-summary">
+                                <span class="summary-label" data-i18n="form_est_price">Tổng chi phí ước tính:</span>
+                                <span class="summary-value" id="estimated-price">250.000đ</span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Photo Spot Showcase Section -->
+    <section id="photo-spot" class="section photo-spot-section bg-light">
+        <div class="container">
+            <div class="photo-spot-layout">
+                <div class="photo-spot-img-col reveal reveal-slide-left">
+                    <div class="photo-spot-frame tilt-card">
+                        <img src="assets/storefront/balcony_terrace_day.jpg" alt="Góc check-in triệu view ban công tầng 2" class="photo-spot-img">
+                        <div class="photo-spot-tag">
+                            <span>Best Photo Spot - Maison TiA</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-spot-text-col reveal reveal-slide-right">
+                    <span class="subheading" data-i18n="photo_sub">GÓC CHỤP ẢNH ĐẸP NHẤT</span>
+                    <h2 data-i18n="photo_title">Góc Check-in "Triệu View" tại Ban Công</h2>
+                    <div class="divider"></div>
+                    <p class="photo-desc-p" data-i18n="photo_desc">Được thiết kế cố định tại góc đẹp nhất của ban công tầng 2. Với giá vẽ gỗ mộc mạc đặt cạnh tác phẩm gốm đang vẽ dở, hậu cảnh là bức tường vàng Hội An đặc trưng và giàn hoa giấy hồng rực rủ xuống kết hợp đèn lồng mây tre. Đây là nơi lý tưởng ghi lại những bức hình lưu niệm nghệ thuật đẹp nhất của bạn.</p>
+                    
+                    <!-- Pro Photo Tips Container -->
+                    <div class="photo-tips-container">
+                        <h4 data-i18n="photo_tips_title">Bí quyết cho bức ảnh nghệ thuật:</h4>
+                        <ul class="photo-tips-list">
+                            <li data-i18n="photo_tip_1"><strong>Khung giờ vàng (16:30 - 17:30):</strong> Ánh nắng hoàng hôn xiên qua giàn hoa giấy tạo chiều sâu huyền ảo.</li>
+                            <li data-i18n="photo_tip_2"><strong>Trang phục phù hợp:</strong> Váy lụa sáng màu (trắng, vàng tơ, xanh ngọc) giúp bạn nổi bật trên nền tường vàng.</li>
+                            <li data-i18n="photo_tip_3"><strong>Góc tạo dáng tự nhiên:</strong> Tay cầm cọ nhẹ nhàng đặt trên phôi gốm thô, mắt hướng về sông Hoài.</li>
+                        </ul>
+                    </div>
+
+                    <div class="hashtag-box">
+                        <span data-i18n="photo_hashtag">Ghé thăm và tag chúng tôi tại:</span>
+                        <strong class="hashtag">#MaisonTiAHoiAn</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visit & Contact Section with Guide Welcome Banner -->
+    <section id="visit" class="section visit-section">
+        <div class="container">
+            <div class="visit-layout">
+                <!-- Location Info -->
+                <div class="visit-info reveal reveal-slide-left">
+                    <span class="subheading" data-i18n="visit_sub">HƯỚNG DẪN GHÉ THĂM</span>
+                    <h2 data-i18n="visit_title">Ghé Thăm Maison TiA</h2>
+                    <div class="divider"></div>
+                    
+                    <div class="info-blocks">
+                        <div class="info-block">
+                            <div class="info-text">
+                                <h4 data-i18n="visit_info_addr_title">Địa chỉ</h4>
+                                <p data-i18n="visit_info_addr_detail">122 Nguyễn Phúc Tần, An Hội, Hội An (Ngay bên cạnh Bel Marina Resort, cách trung tâm phố cổ 5 phút đi bộ).</p>
+                            </div>
+                        </div>
+
+                        <div class="info-block">
+                            <div class="info-text">
+                                <h4 data-i18n="visit_info_hours_title">Giờ mở cửa</h4>
+                                <p data-i18n="visit_info_hours_detail">08:30 - 21:30 (Mở cửa tất cả các ngày trong tuần, kể cả ngày lễ).</p>
+                            </div>
+                        </div>
+
+                        <div class="info-block">
+                            <div class="info-text">
+                                <h4 data-i18n="visit_info_contact_title">Liên hệ nhanh</h4>
+                                <p>Email: <a href="mailto:hello@maisontia.com">hello@maisontia.com</a><br>Phone/Zalo: <strong>+84 905 123 456</strong></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Free Rest Stop for Tour Guides -->
+                    <!-- Guide Welcome Warm Card -->
+                    <div class="guide-welcome-card reveal reveal-slide-left">
+                        <div class="guide-card-badge">Guide Friendly</div>
+                        <h4 data-i18n="guide_welcome_title">Trạm Nghỉ Chân Miễn Phí Cho HDV</h4>
+                        <p data-i18n="guide_welcome_desc">Maison TiA luôn hân hạnh chào đón các anh chị Hướng dẫn viên du lịch ghé qua phòng tranh nghỉ chân: sử dụng nhà vệ sinh sạch sẽ, thưởng thức trà thảo mộc mát lạnh, sử dụng wifi tốc độ cao và ghế ngồi mát lạnh tầng 1 hoàn toàn miễn phí!</p>
+                    </div>
+
+                    <!-- Social CTAs -->
+                    <div class="social-contact">
+                        <h4 data-i18n="social_title">Kênh Chat Trực Tuyến</h4>
+                        <div class="social-buttons">
+                            <a href="https://wa.me/84905123456" target="_blank" class="social-btn whatsapp">
+                                <span>WhatsApp</span>
+                            </a>
+                            <a href="https://zalo.me/84905123456" target="_blank" class="social-btn zalo">
+                                <span>Zalo Chat</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google Maps Card -->
+                <div class="visit-map-card reveal reveal-slide-right">
+                    <div class="map-overlay-img" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)), url('assets/storefront/storefront_night_medium.jpg');">
+                        <div class="map-card-content">
+                            <h3 data-i18n="map_card_title">Maison TiA trên Google Maps</h3>
+                            <p data-i18n="map_card_desc">Dễ dàng định vị và tìm đường đi bộ từ vị trí của bạn tại Hội An.</p>
+                            <a href="https://maps.google.com/?q=Maison+TiA+Hoi+An" target="_blank" class="btn btn-primary" data-i18n="map_card_btn">Mở Bản Đồ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom text-center">
+                <p data-i18n="footer_copy">&copy; 2026 Maison TiA Art & Objects. Mọi quyền được bảo lưu.</p>
+                <div class="footer-links">
+                    <a href="index.html" class="back-proposal-link" data-i18n="footer_back_link">Xem Báo Cáo Kinh Doanh (Chủ Đầu Tư)</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Floating Quick Actions (WhatsApp & Zalo) -->
+    <div class="floating-contact">
+        <a href="https://wa.me/84905123456" target="_blank" class="floating-btn whatsapp" title="WhatsApp Chat">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.69-4.98c-.202-.101-1.202-.594-1.392-.658-.189-.066-.327-.1-.463.1-.137.2-.531.658-.65 0.792-.12.137-.242.153-.444.052-.2-.101-.849-.313-1.616-.997-.597-.533-1.001-1.192-1.119-1.397-.118-.2-.012-.309.088-.41.09-.092.202-.24.302-.36.1-.12.133-.2.2-.33.067-.136.034-.255-.017-.357-.05-.102-.463-1.114-.635-1.528-.168-.403-.356-.349-.463-.355-.12-.007-.25-.008-.38-.008-.13 0-.341.049-.52.242-.179.193-.683.666-.683 1.626 0 .96.697 1.888.795 2.015.097.128 1.369 2.091 3.315 2.927.462.2.822.319 1.102.408.464.147.886.126 1.22.076.372-.055 1.202-.492 1.372-.966.17-.474.17-.88.12-.966-.05-.087-.19-.136-.39-.238z"/></svg>
+        </a>
+        <a href="https://zalo.me/84905123456" target="_blank" class="floating-btn zalo" title="Zalo Chat">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z"/></svg>
+        </a>
+    </div>    <!-- Art Showcase Lightbox (Modal - No Glassmorphism) -->
+    <div id="art-lightbox" class="lightbox" onclick="closeLightbox(event)">
+        <div class="lightbox-content" onclick="event.stopPropagation()">
+            <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+            <div class="lightbox-body">
+                <img id="lightbox-img" src="" alt="Artpiece zoomed">
+                <div class="lightbox-info">
+                    <span id="lightbox-cat" class="category">Category</span>
+                    <h3 id="lightbox-title">Title of the Artwork</h3>
+                    <p id="lightbox-desc">Detailed descriptions go here...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking Success Modal (No Glassmorphism) -->
+    <div id="success-modal" class="modal" onclick="closeSuccessModal(event)">
+        <div class="modal-content text-center" onclick="event.stopPropagation()">
+            <h3 data-i18n="success_modal_title">Đăng Ký Thành Công!</h3>
+            <p id="success-modal-msg" data-i18n="success_modal_msg">Cảm ơn bạn đã lựa chọn Maison TiA. Host của chúng tôi sẽ liên hệ lại với bạn qua số điện thoại hoặc email trong vòng 15 phút để xác nhận lịch đặt.</p>
+            <button class="btn btn-primary" onclick="closeSuccessModal()" data-i18n="success_modal_btn">Đồng ý</button>
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="gallery.js"></script>
+</body>
+</html>
